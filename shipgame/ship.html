@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="styleship" type="ship.css" href="ship.css">
   <title>Battle ship</title>
   <style>
     body {
       background-color: black;
     }
-
     div#board{
       position: relative;
       width:   1024px;
@@ -25,8 +23,8 @@
     }
     table{
       position: absolute;
-      top: 173px;
-      left: 98px;
+      left: 173px;
+      top: 98px;
       border-spacing: 0px; 
     }
     td{
@@ -43,10 +41,13 @@
     form input{
       background-color: rgb(152, 207, 113);
       border-color: rgb(83, 175, 19);
-      font-size: lem;
+      font-size: 1em;
     }
     .hit{
-      
+      background: url("ship.png") no-repeat center center;
+    }
+    .miss{
+      background: url("miss.png") no-repeat center center;
     }
   </style>
 </head>
@@ -60,8 +61,8 @@
         <td id ="06"></td>
       </tr>
       <tr>
-        <td id ="10"></td><td id ="11"></td><td id ="12"></td>
-        <td id ="13"></td><td id ="14"></td><td id ="15"></td>
+        <td id ="10"></td><td class="hit" id ="11"></td><td id ="12"></td>
+        <td id ="13"class="hit"></td><td id ="14"></td><td id ="15"></td>
         <td id ="16"></td>
       </tr>
       <tr>
