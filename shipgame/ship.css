@@ -1,3 +1,13 @@
+body {
+  background-color: black;
+}
+div#board{
+  position: relative;
+  width:   1024px;
+  height:  863px;
+  margin:  auto;
+  background: url("board.jpg")no-repeat;
+}
 div#messageArea{
   position: absolute;
   top: 0px;
@@ -6,8 +16,8 @@ div#messageArea{
 }
 table{
   position: absolute;
-  top: 173px;
-  left: 98px;
+  left: 173px;
+  top: 98px;
   border-spacing: 0px; 
 }
 td{
